@@ -249,16 +249,6 @@
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-commonweal">
-          <a href="/404.html" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
-            
-            公益404
-          </a>
-        </li>
-      
 
       
         <li class="menu-item menu-item-search">
@@ -299,6 +289,110 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/07/12/test2/" itemprop="url">
+                  安装nodejs，配置Cordova环境
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-12T12:14:51+08:00" content="2016-07-12">
+              2016-07-12
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/07/12/test2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/12/test2/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="1-安装nodejs"><a href="#1-安装nodejs" class="headerlink" title="1.安装nodejs"></a>1.安装nodejs</h2><p><a href="http://nodejs.org/dist/v0.10.38/" target="_blank" rel="external">http://nodejs.org/dist/v0.10.38/</a><br>选择node-v0.10.38-x86.msi 用迅雷加速下载</p>
+<h2 id="2-安装Cordova"><a href="#2-安装Cordova" class="headerlink" title="2.安装Cordova"></a>2.安装Cordova</h2><p>最好开一个美国的VPN（略），国内网络你懂的<br>设置美国的镜像<br>npm config set registry <a href="https://registry.nodejitsu.com" target="_blank" rel="external">https://registry.nodejitsu.com</a><br>cmd打开nodejs安装目录<br>D:\nodejs&gt;npm install -g cordova@3.4.0-0.1.3<br>关于API版本：<br>3.0需要的是android-17（Android 4.2.2）<br>3.1和3.2需要android-18（Android 4.3）<br>3.3和3.4需要android-19（Android 4.4.2）<br>不报错就ok了</p>
+<h2 id="3-创建helloworld工程，cordova命令需要将cordova路径加入环境变量-比如-D-nodejs-node-modules"><a href="#3-创建helloworld工程，cordova命令需要将cordova路径加入环境变量-比如-D-nodejs-node-modules" class="headerlink" title="3.创建helloworld工程，cordova命令需要将cordova路径加入环境变量,比如 D:\nodejs\node_modules"></a>3.创建helloworld工程，cordova命令需要将cordova路径加入环境变量,比如 D:\nodejs\node_modules</h2><p>D:\nodejs&gt;cordova create hello com.example.hello HelloWorld<br>提示Downloading cordova library for www…<br>正在下载相关库文件…<br>Download complete<br>下载完成<br>cd hello</p>
+<h2 id="4-添加安卓平台支持"><a href="#4-添加安卓平台支持" class="headerlink" title="4.添加安卓平台支持"></a>4.添加安卓平台支持</h2><p>D:\nodejs\hello&gt;cordova platform add android<br>最后Project successfully created.就是OK了<br>安装Ant，把%ANT_HOME%\bin加到Path环境变量中，不然会报Error “executing command ‘ant’”错。<br><a href="http://ant.apache.org/bindownload.cgi" target="_blank" rel="external">http://ant.apache.org/bindownload.cgi</a><br>选择.zip archive: apache-ant-1.9.4-bin.zip [PGP] [SHA1] [SHA512] [MD5]<br>编译代码<br>cordova build android<br>下载ADT<br>ADT：安卓开发工具<br>Android Development Tools<br><a href="http://developer.android.com/sdk/index.html" target="_blank" rel="external">http://developer.android.com/sdk/index.html</a><br>将这个项目导入的时候选择Android Project from Existing Code导入到Eclipse中，这时候就能按照正常的开发流程进行开发了。<br>可能项目报错误，选中项目，project clean 一下即可 </p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -450,7 +544,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

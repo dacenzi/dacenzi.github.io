@@ -4,6 +4,16 @@
   
     
     <entry>
+      <title><![CDATA[安装nodejs，配置Cordova环境]]></title>
+      <url>http://www.dacenzi.com/2016/07/12/test2/</url>
+      <content type="html"><![CDATA[<h2 id="1-安装nodejs"><a href="#1-安装nodejs" class="headerlink" title="1.安装nodejs"></a>1.安装nodejs</h2><p><a href="http://nodejs.org/dist/v0.10.38/" target="_blank" rel="external">http://nodejs.org/dist/v0.10.38/</a><br>选择node-v0.10.38-x86.msi 用迅雷加速下载</p>
+<h2 id="2-安装Cordova"><a href="#2-安装Cordova" class="headerlink" title="2.安装Cordova"></a>2.安装Cordova</h2><p>最好开一个美国的VPN（略），国内网络你懂的<br>设置美国的镜像<br>npm config set registry <a href="https://registry.nodejitsu.com" target="_blank" rel="external">https://registry.nodejitsu.com</a><br>cmd打开nodejs安装目录<br>D:\nodejs&gt;npm install -g cordova@3.4.0-0.1.3<br>关于API版本：<br>3.0需要的是android-17（Android 4.2.2）<br>3.1和3.2需要android-18（Android 4.3）<br>3.3和3.4需要android-19（Android 4.4.2）<br>不报错就ok了</p>
+<h2 id="3-创建helloworld工程，cordova命令需要将cordova路径加入环境变量-比如-D-nodejs-node-modules"><a href="#3-创建helloworld工程，cordova命令需要将cordova路径加入环境变量-比如-D-nodejs-node-modules" class="headerlink" title="3.创建helloworld工程，cordova命令需要将cordova路径加入环境变量,比如 D:\nodejs\node_modules"></a>3.创建helloworld工程，cordova命令需要将cordova路径加入环境变量,比如 D:\nodejs\node_modules</h2><p>D:\nodejs&gt;cordova create hello com.example.hello HelloWorld<br>提示Downloading cordova library for www…<br>正在下载相关库文件…<br>Download complete<br>下载完成<br>cd hello</p>
+<h2 id="4-添加安卓平台支持"><a href="#4-添加安卓平台支持" class="headerlink" title="4.添加安卓平台支持"></a>4.添加安卓平台支持</h2><p>D:\nodejs\hello&gt;cordova platform add android<br>最后Project successfully created.就是OK了<br>安装Ant，把%ANT_HOME%\bin加到Path环境变量中，不然会报Error “executing command ‘ant’”错。<br><a href="http://ant.apache.org/bindownload.cgi" target="_blank" rel="external">http://ant.apache.org/bindownload.cgi</a><br>选择.zip archive: apache-ant-1.9.4-bin.zip [PGP] [SHA1] [SHA512] [MD5]<br>编译代码<br>cordova build android<br>下载ADT<br>ADT：安卓开发工具<br>Android Development Tools<br><a href="http://developer.android.com/sdk/index.html" target="_blank" rel="external">http://developer.android.com/sdk/index.html</a><br>将这个项目导入的时候选择Android Project from Existing Code导入到Eclipse中，这时候就能按照正常的开发流程进行开发了。<br>可能项目报错误，选中项目，project clean 一下即可 </p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Hello World]]></title>
       <url>http://www.dacenzi.com/2016/06/29/hello-world/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
